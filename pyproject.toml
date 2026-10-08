@@ -1,0 +1,35 @@
+[project]
+name = "primitive-db"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "GlebBrykin", email = "glebsbrykin@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "prettytable>=3.18.0",
+    "prompt>=0.4.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+]
+
+[project.scripts]
+project = "primitive_db.main:main"
+database = "primitive_db.main:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+exclude = ["venv", ".venv", "dist", "__pycache__", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
