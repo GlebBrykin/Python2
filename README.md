@@ -12,4 +12,4 @@ database
 
 ## Демонстрация работы
 
-[asciinema-record](https://asciinema.org/a/REPLACE_WITH_YOUR_LINK)
+[asciinema-record](https://asciinema.org/a/yFB6oNOBWGr7p006)
